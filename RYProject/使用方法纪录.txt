@@ -1,0 +1,19 @@
+﻿
+
+
+
+        [TypeConverter(typeof(PlugInNameConverter))]
+        [DescriptionAttribute("插件名称")]
+        [DisplayNameAttribute("名称")]
+        [CategoryAttribute("使用插件")]
+        public string UserPlugInsDll
+        { get; set; } = "";
+
+
+
+         [Editor(typeof(RYModalEditor<UBoolFuncEditor>), typeof(System.Drawing.Design.UITypeEditor))]
+        [DescriptionAttribute("安全检测，回零及运动前安全选项检测，如：安全门打开不能运动")]
+        [DisplayNameAttribute("安全检测")]
+        [CategoryAttribute("功能")]
+
+
